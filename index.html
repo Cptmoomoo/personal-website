@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vincent Li</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
@@ -43,8 +44,8 @@
       </div>
     </nav>
 
-    <section class="hero mt-0 is-fullheight-with-navbar is-black">
-      <div class="hero-body">
+    <section class="hero is-medium is-black">
+      <div id="codediv" class="hero-body">
         <div id="about-me-code" class="container px-5">
           <typewriter> </typewriter>
         </div>
@@ -226,41 +227,43 @@
         <h1 class="is-size-1 mb-3 has-text-left lightblue">LINKS AND STUFF</h1>
 
         <div class="columns is-multiline">
-          <div class="column is-full">
-            <div class="card has-background-black">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
-                      <img src="https://static.wikia.nocookie.net/google/images/7/72/Logo-gmail.png/revision/latest/scale-to-width-down/350?cb=20201214214241" alt="Github">
-                    </figure>
-                  </div>
-                  <div class="media-content-left">
-                    <p class="title is-2 has-text-white">vinchenzoli3@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-full">
-            <a href="https://github.com/Cptmoomoo">
+          <div class="column is-half">
+            <a href="mailto: vinchenzoli3@gmail.com">
               <div class="card has-background-black">
                 <div class="card-content">
                   <div class="media">
                     <div class="media-left">
                       <figure class="image is-48x48">
-                        <img src="/assets/github_logo.png" alt="Github">
+                        <img src="http://cptmoomoo.github.io/personal-website/assets/gmail.png" alt="email">
                       </figure>
                     </div>
                     <div class="media-content-left">
-                      <p class="title is-2 has-text-white">Linked In</p>
+                      <p id="email" class="title is-3 has-text-white">vinchenzoli3@gmail.com</p>
                     </div>
                   </div>
                 </div>
               </div>
             </a>
           </div>
-          <div class="column is-full">
+          <div class="column is-half">
+            <a href="https://www.linkedin.com/in/vinc-li/">
+              <div class="card has-background-black">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="http://cptmoomoo.github.io/personal-website/assets/linkedin.png" alt="Linked In">
+                      </figure>
+                    </div>
+                    <div class="media-content-left">
+                      <p id="link-card" class="title is-2 has-text-white">Linked In</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column is-half">
             <a href="https://github.com/Cptmoomoo">
               <div class="card has-background-black">
                 <div class="card-content">
@@ -271,7 +274,25 @@
                       </figure>
                     </div>
                     <div class="media-content-left">
-                      <p class="title is-2 has-text-white">Github</p>
+                      <p id="link-card" class="title is-2 has-text-white">Github</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column is-half">
+            <a href="https://github.com/Cptmoomoo">
+              <div class="card has-background-black">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="http://cptmoomoo.github.io/personal-website/assets/devpost.png" alt="Devpost">
+                      </figure>
+                    </div>
+                    <div class="media-content-left">
+                      <p id="link-card" class="title is-2 has-text-white">Devpost</p>
                     </div>
                   </div>
                 </div>
@@ -286,18 +307,14 @@
         <div class="container px-5">
             <div class="columns is-centered">
                 <div class="column is-5">
-                  <p class="has-text-weight-semibold has-text-centered">Vincent Li</h1>
-                  <p class="has-text-centered mb-3">University of Toronto</h1>
-        
-                  <p class="has-text-centered">
-                    Contact Information Footer
-                  </p>
+                  <p id="link-card" class="has-text-weight-semibold has-text-centered">Vincent Li - 04/10/2021</h1>
+
                 </div>
               </div>
         </div>
     </section>
 
-    <script src="main.js"></script>
+    <script src="navbar.js"></script>
     <!-- Benjamin Saobuppha -->
   </body>
 </html>
