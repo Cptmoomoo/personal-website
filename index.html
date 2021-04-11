@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-typer/dist/vue-typer.min.js"></script>
+    <script type="module" src="typewriter.js"></script>
+
+
+    <!-- prod <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>-->
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top p-4 is-black">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <a href="/" class="is-size-3 has-text-weight-semibold"><span style="color: #668de8;">VL</span></a>
+        </div>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu pr-5" id="navMenu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a href="#about-section">About</a>
+          </div>
+          <div class="navbar-item">
+            <a href="#skills-section">Skills/Projects</a>
+          </div>
+          <div class="navbar-item">
+            <a href="#links-section">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero mt-0 is-fullheight-with-navbar is-black">
+      <div class="hero-body">
+        <div id="about-me-code" class="container px-5">
+          <typewriter> </typewriter>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-medium is-black py-5">
+      <a id="about-section" class="navigate-to"></a>
+      <div class="hero-body">
+        <div class="container px-5">
+          <div class="columns">
+            <div class="column mr-6">
+              <div>
+                  <h1 class="is-size-1 mb-3 lightblue">ABOUT ME</h1>
+              </div>
+              <h1 class="is-size-4">
+                I am a co-op student at the University of Toronto specializing in software engineering.
+                Something about myself.
+                Something about hackathons.
+                Something cool.
+              </h1>
+            </div>
+            <div class="column">
+                <div>
+                    <img src="https://avatars.githubusercontent.com/u/65824672?v=4" alt="" />
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-medium">
+      <a id="skills-section" class="navigate-to"></a>
+      <div class="container px-5">
+        <div class="columns is-vcentered is-multiline">
+          <div class="column is-half">
+            <h1 class="is-size-1 mb-3 has-text-centered lightblue">PROJECTS</h1>
+            <p class="is-size-5 has-text-centered">
+              HACKATHON PROJECTS HERE
+            </p>
+          </div>
+          <div class="column is-half is-flex is-justify-content-center is-align-item-center">
+            <div class="card mx-2 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">Certi-Chain</p>
+                    <p class="subtitle is-6 lightblue">Hack Western 7</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+              </div>
+            </div>
+            <div class="card mx-2 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">Vaccurate</p>
+                    <p class="subtitle is-6 lightblue">Some hackathon</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-half is-flex is-justify-content-center is-align-item-center">
+            <div class="card mx-2 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">Certi-Chain</p>
+                    <p class="subtitle is-6 lightblue">Hack Western 7</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+              </div>
+            </div>
+            <div class="card mx-2 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">Vaccurate</p>
+                    <p class="subtitle is-6 lightblue">Some hackathon</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-half is-flex is-justify-content-center is-align-item-center">
+            <div class="card mx-2 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">Certi-Chain</p>
+                    <p class="subtitle is-6 lightblue">Hack Western 7</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+              </div>
+            </div>
+            <div class="card mx-2 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">Vaccurate</p>
+                    <p class="subtitle is-6 lightblue">Some hackathon</p>
+                  </div>
+                </div>
+            
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section has-background-black">
+      <div class="container px-5">
+        <a id="links-section" class="navigate-to"></a>
+        <h1 class="is-size-1 mb-3 has-text-left lightblue">LINKS AND STUFF</h1>
+
+        <div class="columns is-multiline">
+          <div class="column is-full">
+            <div class="card has-background-black">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="https://static.wikia.nocookie.net/google/images/7/72/Logo-gmail.png/revision/latest/scale-to-width-down/350?cb=20201214214241" alt="Github">
+                    </figure>
+                  </div>
+                  <div class="media-content-left">
+                    <p class="title is-2 has-text-white">vinchenzoli3@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-full">
+            <a href="https://github.com/Cptmoomoo">
+              <div class="card has-background-black">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="/assets/github_logo.png" alt="Github">
+                      </figure>
+                    </div>
+                    <div class="media-content-left">
+                      <p class="title is-2 has-text-white">Linked In</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column is-full">
+            <a href="https://github.com/Cptmoomoo">
+              <div class="card has-background-black">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="/assets/github_logo.png" alt="Github">
+                      </figure>
+                    </div>
+                    <div class="media-content-left">
+                      <p class="title is-2 has-text-white">Github</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section is-medium pt-5 pb-5">
+        <div class="container px-5">
+            <div class="columns is-centered">
+                <div class="column is-5">
+                  <p class="has-text-weight-semibold has-text-centered">Vincent Li</h1>
+                  <p class="has-text-centered mb-3">University of Toronto</h1>
+        
+                  <p class="has-text-centered">
+                    Contact Information Footer
+                  </p>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <!-- Benjamin Saobuppha -->
+  </body>
+</html>
