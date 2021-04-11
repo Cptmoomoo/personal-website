@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vincent Li</title>
+
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+
+    <!-- Google Font: Source Code Pro -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Vue and the vuetyper -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-typer/dist/vue-typer.min.js"></script>
-    <script type="module" src="typewriter.js"></script>
-
-
     <!-- prod <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>-->
+    <!-- Scripts -->
+    <script type="module" src="typewriter.js"></script>
+    <script type="module" src="projects.js"></script>
+    <script src="navbar.js"></script>
   </head>
+
   <body>
     <nav class="navbar is-fixed-top p-4 is-black">
       <div class="navbar-brand">
@@ -46,11 +54,9 @@
 
     <section class="hero is-medium is-black">
       <a id="home-section" class="navigate-to"></a>
-      <div id="codediv" class="hero-body">
-        <div id="about-me-code" class="container px-5">
-          <typewriter> </typewriter>
-        </div>
-      </div>
+        <div id="codediv" class="hero-body">
+          <typewriterblock></typewriterblock>
+        </div>    
     </section>
 
     <section class="hero is-medium is-black py-5">
@@ -69,7 +75,9 @@
             </div>
             <div class="column">
                 <div>
-                    <img src="https://avatars.githubusercontent.com/u/65824672?v=4" alt="" />
+                  <figure class="image is-square">
+                    <img src="./assets/avatar.jpg" alt="" />
+                  </figure>
                 </div>
             </div>
           </div>
@@ -77,9 +85,9 @@
       </div>
     </section>
 
-    <section class="section is-medium">
+    <section class="section is-medium has-background-white">
       <a id="skills-section" class="navigate-to-projects"></a>
-      <div class="container px-5">
+      <div id="projects-cards" class="container px-5">
         <div class="columns is-multiline">
           <div class="column">
 
@@ -90,237 +98,94 @@
             <div class="card mx-2 mb-4 has-background-black">  
                 <div class="content py-4 px-4">
                   <div class="tags">
-                    <span class="tag is-link is-light">Python</span>
-                    <span class="tag is-link is-light">Java</span>
-                    <span class="tag is-link is-light">C</span>
-                    <span class="tag is-link is-light">C#</span>
-                    <span class="tag is-link is-light">Javascript</span>
-                    <span class="tag is-link is-light">Node.js</span>
-                    <span class="tag is-link is-light">TypeScript</span>
-                    <span class="tag is-link is-light">HTML/CSS</span>
+                    <hskill-tag v-for="item in hskills" :skill="item"></hskill-tag>
+                    <sskill-tag v-for="item in sskills" :skill="item"></sskill-tag>
                   </div>
                 </div>
             </div>
+            <div id="sitecard">
+
+            </div>
+
+            <project-card title="This Website"
+                          img-href="https://github.com/Cptmoomoo/personal-website"
+                          img-src="./assets/sitephoto.jpg"
+                          img-alt="EcoBlock"
+                          :skills="['Vue', 'Javascript', 'HTML/CSS']"
+                          desc="First time making a website, first time using Vue... I think it turned out pretty well."
+                          github="https://github.com/Cptmoomoo/personal-website">
+            </project-card>
           </div>
 
           <div class="column">
-
-            <div class="card mx-2 mb-4 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <a href="https://devpost.com/software/ecoblock" target="_blank">
-                    <img src="./assets/ecoblock.gif" alt="EcoBlock">
-                  </a>
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">EcoBlock</p>
-                    <p class="subtitle is-6 lightblue">Hoo Hacks 2021</p>
-                  </div>
-                </div>
-                <div class="tags has-addons">
-                  <span class="tag is-warning">WINNER</span>
-                  <span class="tag is-link">Best use of Google Cloud</span>
-                </div>
-                <div class="tags">
-                  <span class="tag is-link is-light">Node.js</span>
-                  <span class="tag is-link is-light">TypeScript</span>
-                  <span class="tag is-link is-light">Blockchain</span>
-                  <span class="tag is-link is-light">Python</span>
-                  <span class="tag is-link is-light">Firebase</span>
-                </div>
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-                <div class="is-flex is-justify-content-center is-align-items-center">
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/ecoblock')">Devpost</button>
-                  <p class="is-size-4 button-seperator">|</p>
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/Johnson-Su/EcoBlock')">Github</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mx-2 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <a href="https://devpost.com/software/certi-chain">
-                    <img src="./assets/certichain.gif" alt="CertiChain">
-                  </a>
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">Certichain</p>
-                    <p class="subtitle is-6 lightblue">Hack Western 7 (2021)</p>
-                  </div>
-                </div>
-                <div class="tags has-addons">
-                  <span class="tag is-warning">WINNER</span>
-                  <span class="tag is-link">Best Hardware Hack by Digi-Key</span>
-                </div>
-                <div class="tags">
-                  <span class="tag is-link is-light">Flask</span>
-                  <span class="tag is-link is-light">Jinja</span>
-                  <span class="tag is-link is-light">Blockchain</span>
-                  <span class="tag is-link is-light">HTML/CSS</span>
-                  <span class="tag is-link is-light">Python</span>
-                </div>
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-                <div class="is-flex is-justify-content-center is-align-items-center">
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/certi-chain')">Devpost</button>
-                  <p class="is-size-4 button-seperator">|</p>
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/Johnson-Su/Certi-Chain')">Github</button>
-                </div>
-              </div>
-            </div>
-
+            <project-card title="EcoBlock"
+                          hackathon="Hoo Hacks 2021"
+                          img-href="https://devpost.com/software/ecoblock"
+                          img-src="./assets/ecoblock.gif"
+                          img-alt="EcoBlock"
+                          winning-prize="Best use of Google Cloud"
+                          :skills="['Node.js', 'TypeScript', 'Blockchain', 'Python', 'Firebase']"
+                          desc="An eco-friendly, power-saving cryptocurrency that rewards mining with green energy"
+                          devpost="https://devpost.com/software/ecoblock"
+                          github="https://github.com/Johnson-Su/EcoBlock">
+            </project-card>
+            <project-card title="JourneyGuide"
+                          hackathon="OpenHacks 2020"
+                          img-href="https://devpost.com/software/journeyguide-3rg7d0"
+                          img-src="./assets/journeyguide.png"
+                          img-alt="JourneyGuide"
+                          :skills="['Javascript', 'Google Cloud API', 'HTML/CSS']"
+                          desc="A google maps API powered outdoor activity route finder"
+                          devpost="https://devpost.com/software/journeyguide-3rg7d0">
+            </project-card>
           </div>
 
           <div class="column">
-
-            <div class="card mx-2 mb-4 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <a href="https://devpost.com/software/vaccurate">
-                    <img src="./assets/vaccurate.gif" alt="Vaccurate">
-                  </a>
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">Vaccurate</p>
-                    <p class="subtitle is-6 lightblue">nwHacks 2021</p>
-                  </div>
-                </div>
-                <div class="tags has-addons">
-                  <span class="tag is-warning">WINNER</span>
-                  <span class="tag is-link">Honourable Mention</span>
-                </div>
-                <div class="tags">
-                  <span class="tag is-link is-light">HTML/CSS</span>
-                  <span class="tag is-link is-light">Javascript</span>
-                  <span class="tag is-link is-light">Firebase</span>
-                </div>
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-                <div class="is-flex is-justify-content-center is-align-items-center">
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/vaccurate')">Devpost</button>
-                  <p class="is-size-4 button-seperator">|</p>
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/BenjaminSao/Vaccurate')">Github</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mx-2 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <a href="https://devpost.com/software/dormbuddy">
-                    <img src="./assets/dorm.gif" alt="DormBuddy">
-                  </a>
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">DormBuddy</p>
-                    <p class="subtitle is-6 lightblue">Calgary Hacks 2021</p>
-                  </div>
-                </div>
-                <div class="tags">
-                  <span class="tag is-link is-light">Node.js</span>
-                  <span class="tag is-link is-light">TypeScript</span>
-                  <span class="tag is-link is-light">WebSockets</span>
-                  <span class="tag is-link is-light">HTML/CSS</span>
-                </div>
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-                <div class="is-flex is-justify-content-center is-align-items-center">
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/dormbuddy')">Devpost</button>
-                  <p class="is-size-4 button-seperator">|</p>
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/BenjaminSao/DormBuddies')">Github</button>
-                </div>
-              </div>
-            </div>
-
+            <project-card title="Vaccurate"
+                          hackathon="nwHacks 2021"
+                          img-href="https://devpost.com/software/vaccurate"
+                          img-src="./assets/vaccurate.gif"
+                          img-alt="Vaccurate"
+                          winning-prize="Honourable Mention"
+                          :skills="['HTML/CSS', 'Javascript', 'Firebase']"
+                          desc="An automated way to co-ordinate and distribute vaccines during times of limited vaccine supply"
+                          devpost="https://devpost.com/software/vaccurate"
+                          github="https://github.com/BenjaminSao/Vaccurate">
+            </project-card>
+            <project-card title="AnimeTaro"
+                          hackathon="Hack the Northeast 2020"
+                          img-href="https://devpost.com/software/animetaro-6tuw1j"
+                          img-src="./assets/animetaro.png"
+                          img-alt="AnimeTaro"
+                          :skills="['Firebase', 'Javascript', 'Chrome Extentions', 'HTML/CSS']"
+                          desc="A chrome extention that helps easily find a place online to watch a particular anime"
+                          devpost="https://devpost.com/software/animetaro-6tuw1j"
+                          github="https://github.com/Cptmoomoo/AnimeTaro">
+            </project-card>
           </div>
 
           <div class="column">
-
-            <div class="card mx-2 mb-4 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <a href="https://devpost.com/software/animetaro-6tuw1j">
-                    <img src="./assets/animetaro.png" alt="AnimeTaro">
-                  </a>
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">AnimeTaro</p>
-                    <p class="subtitle is-6 lightblue">Hack the Northeast 2020</p>
-                  </div>
-                </div>
-                <div class="tags">
-                  <span class="tag is-link is-light">HTML/CSS</span>
-                  <span class="tag is-link is-light">Javascript</span>
-                  <span class="tag is-link is-light">Chrome Extentions</span>
-                  <span class="tag is-link is-light">Firebase</span>
-                </div>
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-                <div class="is-flex is-justify-content-center is-align-items-center">
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/ecoblock')">Devpost</button>
-                  <p class="is-size-4 button-seperator">|</p>
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/Cptmoomoo/AnimeTaro')">Github</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mx-2 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <a href="https://devpost.com/software/journeyguide-3rg7d0">
-                    <img src="./assets/journeyguide.png" alt="JourneyGuide">
-                  </a>
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">JourneyGuide</p>
-                    <p class="subtitle is-6 lightblue">OpenHacks 2020</p>
-                  </div>
-                </div>
-                <div class="tags">
-                  <span class="tag is-link is-light">HTML/CSS</span>
-                  <span class="tag is-link is-light">Javascript</span>
-                  <span class="tag is-link is-light">Google Cloud API</span>
-                </div>
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-                <div class="is-flex is-justify-content-center is-align-items-center">
-                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/ecoblock')">Devpost</button>
-                </div>
-              </div>
-            </div>
-
+            <project-card title="Certichain"
+                          hackathon="Hack Western 7 (2021)"
+                          img-href="https://devpost.com/software/certi-chain"
+                          img-src="./assets/certichain.gif"
+                          img-alt="CertiChain"
+                          winning-prize="Best Hardware Hack"
+                          :skills="['Flask', 'Jinja', 'Blockchain', 'Python', 'HTML/CSS']"
+                          desc="Product authetification using NFC tags and a blockchain"
+                          devpost="https://devpost.com/software/certi-chain"
+                          github="https://github.com/Johnson-Su/Certi-Chain">
+            </project-card>
+            <project-card title="DormBuddy"
+                          hackathon="Calgary Hacks 2021"
+                          img-href="https://devpost.com/software/dormbuddy"
+                          img-src="./assets/dorm.gif"
+                          img-alt="DormBuddy"
+                          :skills="['Node.js', 'TypeScript', 'WebSockets', 'HTML/CSS']"
+                          desc="A way to interact and build relationships between students during an era of virtual schooling"
+                          devpost="https://devpost.com/software/dormbuddy"
+                          github="https://github.com/BenjaminSao/DormBuddies">
+            </project-card>
           </div>
 
         </div>
@@ -409,7 +274,7 @@
       </div>
     </section>
     
-    <section class="section is-medium pt-5 pb-5">
+    <section class="section is-medium pt-5 pb-5 has-background-white">
         <div class="container px-5">
             <div class="columns is-centered">
                 <div class="column is-5">
@@ -420,7 +285,6 @@
         </div>
     </section>
 
-    <script src="navbar.js"></script>
     <!-- Benjamin Saobuppha Helped -->
   </body>
 </html>

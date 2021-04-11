@@ -75,53 +75,85 @@ int main() {
     return 0;
 }`
 
-const typewriterDiv = 
-`<div>
-    <h1 class="big-title mb-5"><span style="color: #668de8;">V</span>incent<span style="color: #668de8;">L</span>i<ext v-bind:file="ext"/></h1>
-        <div class="typewriter">
-            <vue-typer id="aboutcode" :text="[java, c, python, cs, js]" :type-delay='10' :erase-on-complete='false' erase-style='clear' @erased='onErased' :pre-erase-delay='4000'></vue-typer>
-        </div>
-</div>`;
+const codeAniTemp = 
+`
+<div>
+  <div id="about-me-code" class="container px-5">
+    <div>
+      <h1 class="big-title mb-5"><span style="color: #668de8;">V</span>incent<span style="color: #668de8;">L</span>i<ext v-bind:file="ext"/></h1>
+          <typewriter :text="text"/>
+    </div>
+  </div>
+  <div id="codebuttons" class="buttons-div">
+    <button :class="'button is-active is-small ' + javaStyle" v-on:click="changeText(1)">Java</button>
+    <button :class="'button is-active is-small ' + cStyle" v-on:click="changeText(2)">C</button>
+    <button id="csbutton" :class="'button is-active is-small ' + csStyle" v-on:click="changeText(3)">C#</button>
+    <button id="jsbutton" :class="'button is-active is-small ' + jsStyle" v-on:click="changeText(4)">Javascript</button>
+    <button id="pybutton" :class="'button is-active is-small ' + pyStyle" v-on:click="changeText(5)">Python</button>
+  </div>
+</div>`
 
-Vue.component('typewriter', {
+Vue.component('typewriterblock', {
     data: () => {
         return {
-            java: javaText,
-            python: pythonText,
-            cs: csText,
-            js: jsText,
-            c: cText,
-            ext: ".java"
+            javaStyle: "is-darkblue",
+            cStyle: "is-blue",
+            csStyle: "is-blue",
+            jsStyle: "is-blue",
+            pyStyle: "is-blue",
+            ext: ".java",
+            text: javaText
         };
     },
-    template: typewriterDiv,
+    template: codeAniTemp,
     methods: {
-        onErased: function(typedString) {
-          if(typedString == javaText) {
-            this.ext = ".c";
-          }
-          else if (typedString == cText) {
-            this.ext = ".py";
-          }
-          else if (typedString == pythonText) {
-            this.ext = ".cs";
-          }
-          else if (typedString == csText) {
-            this.ext = ".js";
-          }
-          else if (typedString == jsText) {
+        changeText: function(id) {
+          if (id == "1") {
             this.ext = ".java";
+            this.text = javaText;
+            this.javaStyle = "is-darkblue";
+            this.cStyle = this.csStyle = this.jsStyle = this.pyStyle = "is-blue";
+          }
+          else if (id == "2") {
+            this.ext = ".c";
+            this.text = cText;
+            this.cStyle = "is-darkblue";
+            this.javaStyle = this.csStyle = this.jsStyle = this.pyStyle = "is-blue";
+          }
+          else if (id == "3") {
+            this.ext = ".cs";
+            this.text = csText;
+            this.csStyle = "is-darkblue";
+            this.cStyle = this.javaStyle = this.jsStyle = this.pyStyle = "is-blue";
+          }
+          else if (id == "4") {
+            this.ext = ".js";
+            this.text = jsText;
+            this.jsStyle = "is-darkblue";
+            this.cStyle = this.csStyle = this.javaStyle = this.pyStyle = "is-blue";
+          }
+          else if (id == "5") {
+            this.ext = ".py";
+            this.text = pythonText;
+            this.pyStyle = "is-darkblue";
+            this.cStyle = this.csStyle = this.jsStyle = this.javaStyle = "is-blue";
           }
         }
       }
   });
 
+Vue.component('typewriter', {
+  props: ['text'],
+  template: `<div class="typewriter">
+    <vue-typer id="aboutcode" :text="text" :type-delay='8' :repeat="0"></vue-typer>
+</div>`
+});
+
 Vue.component('ext', {
     props: ['file'],
     template: '<span>{{ file }}</span>'
-})
-
+});
 
 var app = new Vue({
-    el: '#about-me-code'
+    el: '#codediv',
 });

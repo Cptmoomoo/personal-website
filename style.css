@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background-color: hsl(0, 0%, 4%);
 }
 
 body {
@@ -44,7 +45,7 @@ a:active {
 a.navigate-to {
   display: block;
   position: relative;
-  top: -250px;
+  top: -180px;
   visibility: hidden;
 }
 
@@ -76,6 +77,10 @@ a.navigate-to-projects {
   background-color: #668de8;
   color: white !important;
 }
+.is-darkblue {
+  background-color: #10368f;
+  color: white !important;
+}
 
 #navMenu {
   background-color: hsl(0, 0%, 4%);
@@ -91,31 +96,6 @@ div.typewriter {
 }
 
 /*Responsiveness*/
-@media only screen and (min-width: 801px) {
-  #codediv {
-    margin-top: -50px;
-  }
-
-}
-
-@media only screen and (max-width: 600px) {
-  #aboutcode .custom.char.typed {
-    color: white;
-    font-size: 3vw;
-  }
-  #file-ext .custom.char.typed {
-    color: white;
-    font-size: 6vw;
-  }
-  .change-title-mobile {
-    font-size: 7vw !important;
-  }
-  .big-title {
-    font-size: 6vw;
-  }
-  
-}
-
 @media screen and (max-width: 449px){
   #email {
     margin-top: 15px;
@@ -140,6 +120,55 @@ div.typewriter {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #aboutcode .custom.char.typed {
+    color: white;
+    font-size: 3vw;
+  }
+  #file-ext .custom.char.typed {
+    color: white;
+    font-size: 6vw;
+  }
+  #code-buttons {
+    margin-left: 25%;
+  }
+  .change-title-mobile {
+    font-size: 7vw !important;
+  }
+  .big-title {
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  #pybutton {
+    margin-top: 8px;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1251px) {
+  #pybutton {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 504px) {
+  #jsbutton {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 960px) {
+  #jsbutton {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #csbutton {
+    margin-top: 8px;
+  }
+}
+
 @media only screen and (min-width: 601px) {
   #aboutcode .custom.char.typed {
     color: white;
@@ -155,5 +184,35 @@ div.typewriter {
   #email {
     margin-top: 5px;
   }
-
 }
+
+@media only screen and (max-width: 800px) {
+  .buttons-div {
+    margin: auto;
+    width: 50%;
+  }
+}
+
+
+@media only screen and (min-width: 801px) {
+  #codediv {
+    margin-top: -50px;
+   }
+   .buttons-div {
+    margin-left: 75%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #sitecard {
+    padding-top: 0px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  #sitecard {
+    padding-top: 300px;
+  }
+}
+
