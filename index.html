@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vincent Li</title>
-    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="http://cptmoomoo.github.io/personal-website/assets/favicon.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
     <nav class="navbar is-fixed-top p-4 is-black">
       <div class="navbar-brand">
         <div class="navbar-item">
-          <a href="/" class="is-size-3 has-text-weight-semibold"><span style="color: #668de8;">VL</span></a>
+          <a href="#home-section" class="is-size-3 has-text-weight-semibold"><span style="color: #668de8;">VL</span></a>
         </div>
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
@@ -35,16 +35,17 @@
             <a href="#about-section">About</a>
           </div>
           <div class="navbar-item">
-            <a href="#skills-section">Skills/Projects</a>
+            <a href="#skills-section">Projects/Skills</a>
           </div>
           <div class="navbar-item">
-            <a href="#links-section">Contact</a>
+            <a href="#links-section">Links</a>
           </div>
         </div>
       </div>
     </nav>
 
     <section class="hero is-medium is-black">
+      <a id="home-section" class="navigate-to"></a>
       <div id="codediv" class="hero-body">
         <div id="about-me-code" class="container px-5">
           <typewriter> </typewriter>
@@ -59,13 +60,11 @@
           <div class="columns">
             <div class="column mr-6">
               <div>
-                  <h1 class="is-size-1 mb-3 lightblue">ABOUT ME</h1>
+                  <h1 class="is-size-1 mb-3 lightblue change-title-mobile">ABOUT ME</h1>
               </div>
               <h1 class="is-size-4">
-                I am a co-op student at the University of Toronto specializing in software engineering.
-                Something about myself.
-                Something about hackathons.
-                Something cool.
+                Hey! I'm <span style="color: #668de8;">Vincent Li</span>, a 2nd year co-op student at the University of Toronto specializing in software engineering.
+                I like doing hackathons with my friends, leaning about new technology, watching anime, and of course playing video games!
               </h1>
             </div>
             <div class="column">
@@ -79,144 +78,251 @@
     </section>
 
     <section class="section is-medium">
-      <a id="skills-section" class="navigate-to"></a>
+      <a id="skills-section" class="navigate-to-projects"></a>
       <div class="container px-5">
-        <div class="columns is-vcentered is-multiline">
-          <div class="column is-half">
-            <h1 class="is-size-1 mb-3 has-text-centered lightblue">PROJECTS</h1>
-            <p class="is-size-5 has-text-centered">
-              HACKATHON PROJECTS HERE
-            </p>
-          </div>
-          <div class="column is-half is-flex is-justify-content-center is-align-item-center">
-            <div class="card mx-2 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">Certi-Chain</p>
-                    <p class="subtitle is-6 lightblue">Hack Western 7</p>
+        <div class="columns is-multiline">
+          <div class="column">
+
+            <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile">PROJECTS</h1>
+            <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile"><hr></h1>
+            <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile">SKILLS</h1>
+
+            <div class="card mx-2 mb-4 has-background-black">  
+                <div class="content py-4 px-4">
+                  <div class="tags">
+                    <span class="tag is-link is-light">Python</span>
+                    <span class="tag is-link is-light">Java</span>
+                    <span class="tag is-link is-light">C</span>
+                    <span class="tag is-link is-light">C#</span>
+                    <span class="tag is-link is-light">Javascript</span>
+                    <span class="tag is-link is-light">Node.js</span>
+                    <span class="tag is-link is-light">TypeScript</span>
+                    <span class="tag is-link is-light">HTML/CSS</span>
                   </div>
                 </div>
-            
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-              </div>
-            </div>
-            <div class="card mx-2 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">Vaccurate</p>
-                    <p class="subtitle is-6 lightblue">Some hackathon</p>
-                  </div>
-                </div>
-            
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-              </div>
             </div>
           </div>
 
-          <div class="column is-half is-flex is-justify-content-center is-align-item-center">
-            <div class="card mx-2 has-background-black">
+          <div class="column">
+
+            <div class="card mx-2 mb-4 has-background-black">
               <div class="card-image">
                 <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <a href="https://devpost.com/software/ecoblock" target="_blank">
+                    <img src="./assets/ecoblock.gif" alt="EcoBlock">
+                  </a>
                 </figure>
               </div>
               <div class="card-content">
                 <div class="media">
                   <div class="media-content">
-                    <p class="title is-4 has-text-white">Certi-Chain</p>
-                    <p class="subtitle is-6 lightblue">Hack Western 7</p>
+                    <p class="title is-4 has-text-white">EcoBlock</p>
+                    <p class="subtitle is-6 lightblue">Hoo Hacks 2021</p>
                   </div>
                 </div>
-            
+                <div class="tags has-addons">
+                  <span class="tag is-warning">WINNER</span>
+                  <span class="tag is-link">Best use of Google Cloud</span>
+                </div>
+                <div class="tags">
+                  <span class="tag is-link is-light">Node.js</span>
+                  <span class="tag is-link is-light">TypeScript</span>
+                  <span class="tag is-link is-light">Blockchain</span>
+                  <span class="tag is-link is-light">Python</span>
+                  <span class="tag is-link is-light">Firebase</span>
+                </div>
                 <div class="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus nec iaculis mauris. 
                 </div>
+                <div class="is-flex is-justify-content-center is-align-items-center">
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/ecoblock')">Devpost</button>
+                  <p class="is-size-4 button-seperator">|</p>
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/Johnson-Su/EcoBlock')">Github</button>
+                </div>
               </div>
             </div>
+
             <div class="card mx-2 has-background-black">
               <div class="card-image">
                 <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <a href="https://devpost.com/software/certi-chain">
+                    <img src="./assets/certichain.gif" alt="CertiChain">
+                  </a>
                 </figure>
               </div>
               <div class="card-content">
                 <div class="media">
                   <div class="media-content">
-                    <p class="title is-4 has-text-white">Vaccurate</p>
-                    <p class="subtitle is-6 lightblue">Some hackathon</p>
+                    <p class="title is-4 has-text-white">Certichain</p>
+                    <p class="subtitle is-6 lightblue">Hack Western 7 (2021)</p>
                   </div>
                 </div>
-            
+                <div class="tags has-addons">
+                  <span class="tag is-warning">WINNER</span>
+                  <span class="tag is-link">Best Hardware Hack by Digi-Key</span>
+                </div>
+                <div class="tags">
+                  <span class="tag is-link is-light">Flask</span>
+                  <span class="tag is-link is-light">Jinja</span>
+                  <span class="tag is-link is-light">Blockchain</span>
+                  <span class="tag is-link is-light">HTML/CSS</span>
+                  <span class="tag is-link is-light">Python</span>
+                </div>
                 <div class="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus nec iaculis mauris. 
                 </div>
+                <div class="is-flex is-justify-content-center is-align-items-center">
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/certi-chain')">Devpost</button>
+                  <p class="is-size-4 button-seperator">|</p>
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/Johnson-Su/Certi-Chain')">Github</button>
+                </div>
               </div>
             </div>
+
           </div>
 
-          <div class="column is-half is-flex is-justify-content-center is-align-item-center">
-            <div class="card mx-2 has-background-black">
+          <div class="column">
+
+            <div class="card mx-2 mb-4 has-background-black">
               <div class="card-image">
                 <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-content">
-                    <p class="title is-4 has-text-white">Certi-Chain</p>
-                    <p class="subtitle is-6 lightblue">Hack Western 7</p>
-                  </div>
-                </div>
-            
-                <div class="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. 
-                </div>
-              </div>
-            </div>
-            <div class="card mx-2 has-background-black">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <a href="https://devpost.com/software/vaccurate">
+                    <img src="./assets/vaccurate.gif" alt="Vaccurate">
+                  </a>
                 </figure>
               </div>
               <div class="card-content">
                 <div class="media">
                   <div class="media-content">
                     <p class="title is-4 has-text-white">Vaccurate</p>
-                    <p class="subtitle is-6 lightblue">Some hackathon</p>
+                    <p class="subtitle is-6 lightblue">nwHacks 2021</p>
                   </div>
                 </div>
-            
+                <div class="tags has-addons">
+                  <span class="tag is-warning">WINNER</span>
+                  <span class="tag is-link">Honourable Mention</span>
+                </div>
+                <div class="tags">
+                  <span class="tag is-link is-light">HTML/CSS</span>
+                  <span class="tag is-link is-light">Javascript</span>
+                  <span class="tag is-link is-light">Firebase</span>
+                </div>
                 <div class="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus nec iaculis mauris. 
                 </div>
+                <div class="is-flex is-justify-content-center is-align-items-center">
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/vaccurate')">Devpost</button>
+                  <p class="is-size-4 button-seperator">|</p>
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/BenjaminSao/Vaccurate')">Github</button>
+                </div>
               </div>
             </div>
+
+            <div class="card mx-2 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <a href="https://devpost.com/software/dormbuddy">
+                    <img src="./assets/dorm.gif" alt="DormBuddy">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">DormBuddy</p>
+                    <p class="subtitle is-6 lightblue">Calgary Hacks 2021</p>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span class="tag is-link is-light">Node.js</span>
+                  <span class="tag is-link is-light">TypeScript</span>
+                  <span class="tag is-link is-light">WebSockets</span>
+                  <span class="tag is-link is-light">HTML/CSS</span>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+                <div class="is-flex is-justify-content-center is-align-items-center">
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/dormbuddy')">Devpost</button>
+                  <p class="is-size-4 button-seperator">|</p>
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/BenjaminSao/DormBuddies')">Github</button>
+                </div>
+              </div>
+            </div>
+
           </div>
-          
+
+          <div class="column">
+
+            <div class="card mx-2 mb-4 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <a href="https://devpost.com/software/animetaro-6tuw1j">
+                    <img src="./assets/animetaro.png" alt="AnimeTaro">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">AnimeTaro</p>
+                    <p class="subtitle is-6 lightblue">Hack the Northeast 2020</p>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span class="tag is-link is-light">HTML/CSS</span>
+                  <span class="tag is-link is-light">Javascript</span>
+                  <span class="tag is-link is-light">Chrome Extentions</span>
+                  <span class="tag is-link is-light">Firebase</span>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+                <div class="is-flex is-justify-content-center is-align-items-center">
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/ecoblock')">Devpost</button>
+                  <p class="is-size-4 button-seperator">|</p>
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://github.com/Cptmoomoo/AnimeTaro')">Github</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mx-2 has-background-black">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <a href="https://devpost.com/software/journeyguide-3rg7d0">
+                    <img src="/assets/journeyguide.png" alt="JourneyGuide">
+                  </a>
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4 has-text-white">JourneyGuide</p>
+                    <p class="subtitle is-6 lightblue">OpenHacks 2020</p>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span class="tag is-link is-light">HTML/CSS</span>
+                  <span class="tag is-link is-light">Javascript</span>
+                  <span class="tag is-link is-light">Google Cloud API</span>
+                </div>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris. 
+                </div>
+                <div class="is-flex is-justify-content-center is-align-items-center">
+                  <button class="button is-small is-hovered is-blue mx-2" onclick="window.open('https://devpost.com/software/ecoblock')">Devpost</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </section>
@@ -224,7 +330,7 @@
     <section class="section has-background-black">
       <div class="container px-5">
         <a id="links-section" class="navigate-to"></a>
-        <h1 class="is-size-1 mb-3 has-text-left lightblue">LINKS AND STUFF</h1>
+        <h1 class="change-title-mobile is-size-1 mb-3 has-text-left lightblue">LINKS AND STUFF</h1>
 
         <div class="columns is-multiline">
           <div class="column is-half">
@@ -246,7 +352,7 @@
             </a>
           </div>
           <div class="column is-half">
-            <a href="https://www.linkedin.com/in/vinc-li/">
+            <a href="https://www.linkedin.com/in/vinc-li/" target="_blank">
               <div class="card has-background-black">
                 <div class="card-content">
                   <div class="media">
@@ -264,7 +370,7 @@
             </a>
           </div>
           <div class="column is-half">
-            <a href="https://github.com/Cptmoomoo">
+            <a href="https://github.com/Cptmoomoo" target="_blank">
               <div class="card has-background-black">
                 <div class="card-content">
                   <div class="media">
@@ -282,7 +388,7 @@
             </a>
           </div>
           <div class="column is-half">
-            <a href="https://github.com/Cptmoomoo">
+            <a href="https://devpost.com/vinc-li?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">
               <div class="card has-background-black">
                 <div class="card-content">
                   <div class="media">
@@ -315,6 +421,6 @@
     </section>
 
     <script src="navbar.js"></script>
-    <!-- Benjamin Saobuppha -->
+    <!-- Benjamin Saobuppha Helped -->
   </body>
 </html>

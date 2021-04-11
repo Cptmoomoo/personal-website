@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Source Code Pro", monospace;
 }
@@ -12,6 +16,10 @@ h2 {
 
 p {
   letter-spacing: 1px;
+}
+
+hr {
+  background-color: black;
 }
 
 /* unvisited link */
@@ -40,6 +48,13 @@ a.navigate-to {
   visibility: hidden;
 }
 
+a.navigate-to-projects {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden;
+}
+
 .lightblue {
   color: #668de8;
 }
@@ -53,10 +68,29 @@ a.navigate-to {
   padding-right: 8.125rem;
 }
 
+.button-seperator {
+  color: grey;
+}
+
+.is-blue {
+  background-color: #668de8;
+  color: white !important;
+}
+
 #navMenu {
   background-color: hsl(0, 0%, 4%);
 }
 
+.vue-typer .custom.caret.typing {
+  background-color: white;
+}
+
+div.typewriter {
+  height: 450px;
+  overflow-anchor: none;
+}
+
+/*Responsiveness*/
 @media only screen and (min-width: 801px) {
   #codediv {
     margin-top: -50px;
@@ -72,6 +106,9 @@ a.navigate-to {
   #file-ext .custom.char.typed {
     color: white;
     font-size: 6vw;
+  }
+  .change-title-mobile {
+    font-size: 7vw !important;
   }
   .big-title {
     font-size: 6vw;
@@ -119,16 +156,4 @@ a.navigate-to {
     margin-top: 5px;
   }
 
-  /* #link-card {
-    margin-top: 1px;
-  } */
-}
-
-.vue-typer .custom.caret.typing {
-  background-color: white;
-}
-
-div.typewriter {
-  height: 450px;
-  overflow-anchor: none;
 }

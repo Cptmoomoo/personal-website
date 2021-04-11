@@ -16,11 +16,10 @@ const javaText = `public class AboutMe {
 };`;
 
 const pythonText = `class AboutMe:
-    def __init__(self):
-        self.name = "Vincent Li"
-        self.school = "University of Toronto"
-        self.languages = ["English", "Japanese"]
-        self.age = 20
+    name = "Vincent Li"
+    school = "University of Toronto"
+    languages = ["English", "Japanese"]
+    age = 20
     
     # Hobbies
     def do_hackathon() -> Prize:
