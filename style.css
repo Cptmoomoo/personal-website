@@ -54,7 +54,7 @@ a.navigate-to {
 }
 
 #navMenu {
-  background-color: black;
+  background-color: hsl(0, 0%, 4%);
 }
 
 @media only screen and (min-width: 801px) {
@@ -130,4 +130,5 @@ a.navigate-to {
 
 div.typewriter {
   height: 450px;
+  overflow-anchor: none;
 }
