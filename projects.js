@@ -4,19 +4,19 @@ Vue.use(VueTyperPlugin)
 // Hard Skills tags
 Vue.component('hskill-tag', {
     props: ['skill'],
-    template: `<span class="tag is-link">{{ skill }}</span>`
+    template: `<span class="tag is-link small-text-tags">{{ skill }}</span>`
 });
 
 // Soft Skills tags
 Vue.component('sskill-tag', {
     props: ['skill'],
-    template: `<span class="tag is-warning">{{ skill }}</span>`
+    template: `<span class="tag is-warning small-text-tags">{{ skill }}</span>`
 });
 
 // Skills associated with projects
 Vue.component('skill-proj', {
     props: ['skill'],
-    template: `<span class="tag is-link is-light">{{ skill }}</span>`
+    template: `<span class="tag is-link is-light small-text-tags">{{ skill }}</span>`
 });
 
 
@@ -33,18 +33,18 @@ const cardTemplate =
 <div class="card-content">
   <div class="media">
     <div class="media-content">
-      <p class="title is-4 has-text-white">{{ title }}</p>
-      <p class="subtitle is-6 lightblue">{{ hackathon }}</p>
+      <p class="title is-4 has-text-white card-title-small">{{ title }}</p>
+      <p class="subtitle is-6 lightblue card-subtitle-small">{{ hackathon }}</p>
     </div>
   </div>
   <div class="tags has-addons" v-if="winningPrize">
-    <span class="tag is-warning">WINNER</span>
-    <span class="tag is-link">{{ winningPrize }}</span>
+    <span class="tag is-warning small-text-tags">WINNER</span>
+    <span class="tag is-link small-text-tags">{{ winningPrize }}</span>
   </div>
   <div class="tags">
     <skill-proj v-for="skill in skills" :skill="skill"></skill-proj>
   </div>
-  <div class="content">
+  <div class="content small-text-mobile">
     {{ desc }}
   </div>
   <div class="is-flex is-justify-content-center is-align-items-center">

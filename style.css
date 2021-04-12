@@ -111,12 +111,12 @@ div.typewriter {
 @media only screen and (min-width: 450px) and (max-width: 600px) {
   #email {
     margin-top: 13px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   #link-card {
     margin-top: 8px;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -166,6 +166,29 @@ div.typewriter {
 @media only screen and (max-width: 330px) {
   #csbutton {
     margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .small-text-mobile {
+    font-size: 14px;
+  }
+
+  .small-text-tags {
+    font-size: 10px !important;
+  }
+
+  .small-text-mobile-bottom {
+    font-size: 14px !important;
+  }
+  .card-title-small {
+    font-size: 18px !important;
+  }
+  .card-subtitle-small {
+    font-size: 14px !important;
+  }
+  .aboutme-mobile {
+    font-size: 12px !important;
   }
 }
 
