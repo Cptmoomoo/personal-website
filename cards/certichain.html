@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vincent Li - Certi-Chain</title>
+
+    <link rel="shortcut icon" type="image/png" href="../assets/logos/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+
+    <!-- Google Font: Source Code Pro -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles/card-style.css" />
+
+    <!-- Scripts -->
+    <script src="../scripts/navbar.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar is-fixed-top p-4 is-black">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <a href="../index.html" class="is-size-3 has-text-weight-semibold">
+            <figure class="image">
+              <img src="../assets/logos/logo.png" alt="Vincent Li" style="width: 34px; height: 28px;">
+            </figure>  
+          </a>
+        </div>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu pr-5" id="navMenu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <p class="navbar-project">PROJECTS:</p>
+          </div>
+          <div class="navbar-item">
+            <a href="./ecoblock.html">EcoBlock</a>
+          </div>
+          <div class="navbar-item">
+            <a href="./certichain.html">Certi-Chain</a>
+          </div>
+          <div class="navbar-item">
+            <a href="./vaccurate.html">Vaccurate</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-medium is-black py-5 is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container px-5 has-text-centered">
+          <div>
+            <p class="is-size-1 lightblue change-title-mobile">Certi-Chain</p>
+            <p class="subtitle lightblue is-5 mb-3">Hack Western 7: 36 Hour Hackathon</p>
+          </div>
+          <div class="mb-4">
+            <span class="tag is-link small-text-tags">Flask</span>
+            <span class="tag is-link small-text-tags">Jinja</span>
+            <span class="tag is-link small-text-tags">Python</span>
+            <span class="tag is-link small-text-tags">Heroku</span>
+            <span class="tag is-link small-text-tags">Blockchain</span>
+            <span class="tag is-link small-text-tags">HTML/CSS</span>
+          </div>
+          <p class="is-size-4 is-size-6-mobile aboutme-mobile">
+            Using the power of blockchains to authenticate and verify product origin
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-medium is-black py-5">
+      <div class="hero-body">
+        <div class="container px-5">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div>
+                <figure class="image is-3by2">
+                  <img src="../assets/certichain/certichain.gif" alt="Certi-Chain"/>
+                </figure>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div>
+                <p class="subtitle lightblue is-3 mb-5 change-title-mobile">About Certi-Chain</p>
+              </div>
+              <p class="is-size-5 is-size-6-mobile aboutme-mobile">
+                Certi-Chain is a blockchain powered authentication app that uses a blockchain to record 
+                data about a particular product (Manufacture location, value, materials, etc.). Since blockchains cannot be edited, 
+                we can be certain that the information stored about a particular product is valid (Information is added by the producer). 
+                Consumers can view this information by scanning an NFC tag with their phones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-medium is-black py-5">
+      <div class="hero-body">
+        <div class="container px-5">
+          <div class="columns is-vcentered">
+            <div class="column has-text-centered">
+              <div>
+                <p class="subtitle lightblue is-3 mb-5 change-title-mobile">My Involvement</p>
+              </div>
+              <p class="is-size-5 is-size-6-mobile aboutme-mobile">
+                I set up the blockchain using Python and hosted some nodes on heroku for demo purposes. I learned and implemented a Proof of Work algorithm 
+                for the blockchain, and set up a simple web UI for producers to put data into the blockchain. I worked with Python Flask and Jinja to integrate 
+                the Python blackend with the frontend code, and assisted with setting up NFC tags to query for product information.
+              </p>
+            </div>
+            <div class="column">
+              <div>
+                <figure class="image is-5by3">
+                  <img src="../assets/certichain/app.png" alt=""/>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-medium is-black pt-5">
+      <div class="hero-body">
+        <div class="container px-5">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div>
+                <figure class="image is-2by1">
+                  <img src="../assets/certichain/digikey.png" alt="Hardware Hack"/>
+                </figure>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <div>
+                <p class="subtitle lightblue is-3 mb-5 change-title-mobile">Achievements</p>
+              </div>
+              <p class="is-size-5 is-size-6-mobile aboutme-mobile">
+                Within the 36 hours, we were able to create a blockchain that stored the relevant product information, 
+                and were able to query it through a web UI and NFC tags. We were also able to deploy some demo nodes 
+                to Heroku. We received the award of <span class="winner-color">Best Hardware Hack by Digi-Key</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mb-5">
+      <div class="columns is-multiline">
+        <div class="column is-half">
+          <a href="https://github.com/Johnson-Su/Certi-Chain" target="_blank">
+            <div class="card has-background-black">
+              <div class="card-content">
+                <div class="media is-flex is-justify-content-center">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="../assets/logos/github_logo.png" alt="Github">
+                    </figure>
+                  </div>
+                  <div class="media-content-left">
+                    <p id="link-card" class="title is-2 has-text-white">Github</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="column">
+          <a href="https://devpost.com/software/certi-chain" target="_blank">
+            <div class="card has-background-black">
+              <div class="card-content">
+                <div class="media is-flex is-justify-content-center">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="../assets/logos/devpost.png" alt="Devpost">
+                    </figure>
+                  </div>
+                  <div class="media-content-left">
+                    <p id="link-card" class="title is-2 has-text-white small-text-mobile">Devpost</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="section is-medium pt-5 pb-5 has-background-black">
+        <div class="container px-5">
+            <div class="columns is-centered">
+                <div class="column is-5">
+                  <p id="link-card" class="has-text-weight-semibold has-text-centered small-text-mobile-bottom">Vincent Li - 04/19/2021</h1>
+                </div>
+              </div>
+        </div>
+    </section>
+
+  </body>
+</html>

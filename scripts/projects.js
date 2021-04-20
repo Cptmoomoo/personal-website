@@ -1,4 +1,4 @@
-var VueTyperPlugin = window.VueTyper.default
+var VueTyperPlugin = window.VueTyper.default;
 Vue.use(VueTyperPlugin)
 
 // Hard Skills tags
@@ -25,7 +25,7 @@ const cardTemplate =
 `<div class="card mx-2 my-4 has-background-black">
 <div class="card-image">
   <figure class="image is-3by2">
-    <a :href="imgHref" target="_blank">
+    <a :href="imgHref">
       <img :src="imgSrc" alt="imgAlt">
     </a>
   </figure>
@@ -66,11 +66,11 @@ Vue.component('project-card', {
 });
   
   
-  var app = new Vue({
-      el: '#projects-cards',
-      data: {
-        hskills: ["Python", "Java", "C", "C#", "Javascript", "Node.js", "TypeScript", "HTML/CSS"],
-        sskills: ["Problem Solving", "Fast Learner", "Teamwork", "Independant", "Sense of Humor"]
-      }
-  });
+var app = new Vue({
+    el: '#projects-cards',
+    data: {
+      hskills: ["Python", "Java", "C", "C#", "Javascript", "Node.js", "TypeScript", "Heroku", "HTML/CSS"],
+      sskills: ["Problem Solving", "Fast Learner", "Teamwork", "Independant", "Sense of Humor"]
+    }
+});
   

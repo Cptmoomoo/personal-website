@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+    background-color: hsl(0, 0%, 4%);
+}
+  
+body {
+    font-family: "Source Code Pro", monospace;
+}
+  
+h1 {
+    letter-spacing: 1px;
+}
+  
+h2 {
+    letter-spacing: 1px;
+}
+  
+p {
+    letter-spacing: 1px;
+}
+  
+hr {
+    background-color: black;
+}
+
+/* unvisited link */
+a:link {
+    color: #668de8;
+}
+
+/* visited link */
+a:visited {
+    color: #668de8;
+}
+
+/* mouse over link */
+a:hover {
+    color: #668de8;
+}
+
+/* selected link */
+a:active {
+    color: #668de8;
+}
+
+.lightblue {
+  color: #668de8 !important;
+}
+
+.has-background-black {
+  color: white;
+}
+
+.winner-color {
+  color: hsl(48, 100%, 67%);
+}
+
+.navbar-project {
+  color: white;
+}
+
+#navMenu {
+    background-color: hsl(0, 0%, 4%);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 449px){
+  #link-card {
+    margin-top: 13px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+  #link-card {
+    margin-top: 8px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .change-title-mobile {
+      font-size: 7vw !important;
+    }
+    .big-title {
+      font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .small-text-tags {
+      font-size: 10px !important;
+    }
+}
+  
+@media only screen and (max-width: 400px) {
+    .small-text-mobile {
+      font-size: 14px;
+    }
+    .small-text-tags {
+      font-size: 10px !important;
+    }
+    .small-text-mobile-bottom {
+      font-size: 14px !important;
+    }
+    .card-title-small {
+      font-size: 18px !important;
+    }
+    .card-subtitle-small {
+      font-size: 14px !important;
+    }
+    .aboutme-mobile {
+      font-size: 12px !important;
+    }
+}
+  
+@media only screen and (min-width: 601px) {
+
+    .big-title {
+        font-size: 3vw;
+    }
+}
+  
+  
+  

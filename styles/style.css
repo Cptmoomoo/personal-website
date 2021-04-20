@@ -56,6 +56,11 @@ a.navigate-to-projects {
   visibility: hidden;
 }
 
+div.typewriter {
+  height: 450px;
+  overflow-anchor: none;
+}
+
 .lightblue {
   color: #668de8;
 }
@@ -82,19 +87,17 @@ a.navigate-to-projects {
   color: white !important;
 }
 
-#navMenu {
-  background-color: hsl(0, 0%, 4%);
-}
-
 .vue-typer .custom.caret.typing {
   background-color: white;
 }
 
-div.typewriter {
-  height: 450px;
-  overflow-anchor: none;
+#navMenu {
+  background-color: hsl(0, 0%, 4%);
 }
 
+#moreinfo {
+  font-family: 'Architects Daughter', cursive;
+}
 /*Responsiveness*/
 @media screen and (max-width: 449px){
   #email {
@@ -173,11 +176,9 @@ div.typewriter {
   .small-text-mobile {
     font-size: 14px;
   }
-
   .small-text-tags {
     font-size: 10px !important;
   }
-
   .small-text-mobile-bottom {
     font-size: 14px !important;
   }

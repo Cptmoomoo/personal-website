@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vincent Li</title>
 
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="./assets/logos/favicon.ico"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
 
     <!-- Google Font: Source Code Pro -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Architects+Daughter&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <!-- Vue and the vuetyper -->
     <!-- dev <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
     <script src="https://unpkg.com/vue-typer/dist/vue-typer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- Scripts -->
-    <script type="module" src="typewriter.js"></script>
-    <script type="module" src="projects.js"></script>
-    <script src="navbar.js"></script>
+    <script type="module" src="./scripts/typewriter.js"></script>
+    <script type="module" src="./scripts/projects.js"></script>
+    <script src="./scripts/navbar.js"></script>
   </head>
 
   <body>
@@ -31,7 +31,7 @@
         <div class="navbar-item">
           <a href="#home-section" class="is-size-3 has-text-weight-semibold">
             <figure class="image">
-              <img src="./assets/logo.png" alt="Vincent Li" style="width: 34px; height: 28px;">
+              <img src="./assets/logos/logo.png" alt="Vincent Li" style="width: 34px; height: 28px;">
             </figure>  
           </a>
         </div>
@@ -81,7 +81,7 @@
             <div class="column">
                 <div>
                   <figure class="image is-square">
-                    <img class="is-rounded" src="./assets/avatar.png" alt="Taking a good Photo of Myself..."/>
+                    <img class="is-rounded" src="./assets/avatars/avatar.png" alt="Taking a good Photo of Myself..."/>
                   </figure>
                 </div>
             </div>
@@ -95,8 +95,9 @@
       <div id="projects-cards" class="container px-5">
         <div class="columns is-multiline">
           <div class="column">
-
-            <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile">PROJECTS</h1>
+            <a href="./cards/ecoblock.html">
+              <h1 class="is-size-1 lightblue has-text-centered change-title-mobile">PROJECTS</h1>
+            </a>
             <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile"><hr></h1>
             <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile">SKILLS</h1>
 
@@ -108,14 +109,14 @@
                   </div>
                 </div>
             </div>
-            <div id="sitecard">
+            <h1 id="moreinfo" class="has-text-centered">Click the images for more info!</h1>
 
-            </div>
+            <div id="sitecard"></div>
 
             <project-card title="This Website"
                           hackathon="Personal Project"
                           img-href="https://github.com/Cptmoomoo/personal-website"
-                          img-src="./assets/sitephoto.jpg"
+                          img-src="./assets/personal_website/sitephoto.jpg"
                           img-alt="EcoBlock"
                           :skills="['Vue', 'Javascript', 'HTML/CSS']"
                           desc="First time making a website, first time using Vue... I think it turned out pretty well."
@@ -126,10 +127,10 @@
           <div class="column">
             <project-card title="EcoBlock"
                           hackathon="Hoo Hacks 2021"
-                          img-href="https://devpost.com/software/ecoblock"
-                          img-src="./assets/ecoblock.gif"
+                          img-href="./cards/ecoblock.html"
+                          img-src="./assets/ecoblock/ecoblock.gif"
                           img-alt="EcoBlock"
-                          winning-prize="Best use of Google Cloud"
+                          winning-prize="Best Use of Google Cloud"
                           :skills="['Node.js', 'TypeScript', 'Blockchain', 'Python', 'Firebase']"
                           desc="An eco-friendly, power-saving cryptocurrency that rewards mining with green energy"
                           devpost="https://devpost.com/software/ecoblock"
@@ -138,7 +139,7 @@
             <project-card title="JourneyGuide"
                           hackathon="OpenHacks 2020"
                           img-href="https://devpost.com/software/journeyguide-3rg7d0"
-                          img-src="./assets/journeyguide.png"
+                          img-src="./assets/journeyguide/journeyguide.png"
                           img-alt="JourneyGuide"
                           :skills="['Javascript', 'Google Cloud API', 'HTML/CSS']"
                           desc="A google maps API powered outdoor activity route finder"
@@ -149,11 +150,11 @@
           <div class="column">
             <project-card title="Vaccurate"
                           hackathon="nwHacks 2021"
-                          img-href="https://devpost.com/software/vaccurate"
-                          img-src="./assets/vaccurate.gif"
+                          img-href="./cards/vaccurate.html"
+                          img-src="./assets/vaccurate/vaccurate.gif"
                           img-alt="Vaccurate"
                           winning-prize="Honourable Mention"
-                          :skills="['HTML/CSS', 'Javascript', 'Firebase']"
+                          :skills="['HTML/CSS', 'Javascript', 'Java', 'Firebase', 'Heroku']"
                           desc="An automated way to co-ordinate and distribute vaccines during times of limited vaccine supply"
                           devpost="https://devpost.com/software/vaccurate"
                           github="https://github.com/BenjaminSao/Vaccurate">
@@ -161,7 +162,7 @@
             <project-card title="AnimeTaro"
                           hackathon="Hack the Northeast 2020"
                           img-href="https://devpost.com/software/animetaro-6tuw1j"
-                          img-src="./assets/animetaro.png"
+                          img-src="./assets/animetaro/animetaro.png"
                           img-alt="AnimeTaro"
                           :skills="['Firebase', 'Javascript', 'Chrome Extentions', 'HTML/CSS']"
                           desc="A chrome extention that helps easily find a place online to watch a particular anime"
@@ -171,13 +172,13 @@
           </div>
 
           <div class="column">
-            <project-card title="Certichain"
+            <project-card title="Certi-Chain"
                           hackathon="Hack Western 7 (2021)"
-                          img-href="https://devpost.com/software/certi-chain"
-                          img-src="./assets/certichain.gif"
+                          img-href="./cards/certichain.html"
+                          img-src="./assets/certichain/certichain.gif"
                           img-alt="CertiChain"
                           winning-prize="Best Hardware Hack"
-                          :skills="['Flask', 'Jinja', 'Blockchain', 'Python', 'HTML/CSS']"
+                          :skills="['Flask', 'Jinja', 'Blockchain', 'Python', 'HTML/CSS', 'Heroku']"
                           desc="Product authetification using NFC tags and a blockchain"
                           devpost="https://devpost.com/software/certi-chain"
                           github="https://github.com/Johnson-Su/Certi-Chain">
@@ -185,7 +186,7 @@
             <project-card title="DormBuddy"
                           hackathon="Calgary Hacks 2021"
                           img-href="https://devpost.com/software/dormbuddy"
-                          img-src="./assets/dorm.gif"
+                          img-src="./assets/dormbuddy/dorm.gif"
                           img-alt="DormBuddy"
                           :skills="['Node.js', 'TypeScript', 'WebSockets', 'HTML/CSS']"
                           desc="A way to interact and build relationships between students during an era of virtual schooling"
@@ -211,7 +212,7 @@
                   <div class="media">
                     <div class="media-left">
                       <figure class="image is-48x48">
-                        <img src="./assets/uoft.png" alt="email">
+                        <img src="./assets/logos/uoft.png" alt="email">
                       </figure>
                     </div>
                     <div class="media-content-left">
@@ -229,7 +230,7 @@
                   <div class="media">
                     <div class="media-left">
                       <figure class="image is-48x48">
-                        <img src="./assets/linkedin.png" alt="Linked In">
+                        <img src="./assets/logos/linkedin.png" alt="Linked In">
                       </figure>
                     </div>
                     <div class="media-content-left">
@@ -247,7 +248,7 @@
                   <div class="media">
                     <div class="media-left">
                       <figure class="image is-48x48">
-                        <img src="./assets/github_logo.png" alt="Github">
+                        <img src="./assets/logos/github_logo.png" alt="Github">
                       </figure>
                     </div>
                     <div class="media-content-left">
@@ -265,7 +266,7 @@
                   <div class="media">
                     <div class="media-left">
                       <figure class="image is-48x48">
-                        <img src="http://cptmoomoo.github.io/personal-website/assets/devpost.png" alt="Devpost">
+                        <img src="./assets/logos/devpost.png" alt="Devpost">
                       </figure>
                     </div>
                     <div class="media-content-left">
@@ -284,7 +285,7 @@
         <div class="container px-5">
             <div class="columns is-centered">
                 <div class="column is-5">
-                  <p id="link-card" class="has-text-weight-semibold has-text-centered small-text-mobile-bottom">Vincent Li - 04/10/2021</h1>
+                  <p id="link-card" class="has-text-weight-semibold has-text-centered small-text-mobile-bottom">Vincent Li - 04/19/2021</h1>
 
                 </div>
               </div>
