@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vincent Li - Vaccurate</title>
+    <title>Vincent Li - Certi-Chain</title>
 
     <link rel="shortcut icon" type="image/png" href="../assets/logos/favicon.ico"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
@@ -66,18 +66,17 @@
       <div class="hero-body">
         <div class="container px-5 has-text-centered">
           <div>
-            <p class="is-size-1 lightblue change-title-mobile">Vaccurate</p>
-            <p class="subtitle lightblue is-5 mb-3">nwHacks 2020: 24 Hour Hackathon</p>
+            <p class="is-size-1 lightblue change-title-mobile">DormBuddy</p>
+            <p class="subtitle lightblue is-5 mb-3">Calgary Hacks 2021: 24 Hour Hackathon</p>
           </div>
           <div class="mb-4">
+            <span class="tag is-link small-text-tags">Node.Js</span>
+            <span class="tag is-link small-text-tags">Typescript</span>
+            <span class="tag is-link small-text-tags">WebSockets</span>
             <span class="tag is-link small-text-tags">HTML/CSS</span>
-            <span class="tag is-link small-text-tags">Javascript</span>
-            <span class="tag is-link small-text-tags">Java</span>
-            <span class="tag is-link small-text-tags">Heroku</span>
-            <span class="tag is-link small-text-tags">Firebase</span>
           </div>
           <p class="is-size-4 is-size-6-mobile aboutme-mobile">
-            A streamlined way to allocate and distribute vaccines during a pandemic
+            Creating an online social interaction platform to bring people together during the COVID-19 pandemic
           </p>
         </div>
       </div>
@@ -90,19 +89,18 @@
             <div class="column">
               <div>
                 <figure class="image is-3by2">
-                  <img src="../assets/vaccurate/vaccurate.gif" alt="Vaccurate"/>
+                  <img src="../assets/dormbuddy/dorm.gif" alt="Dormbuddy"/>
                 </figure>
               </div>
             </div>
             <div class="column has-text-centered">
               <div>
-                <p class="subtitle lightblue is-3 mb-5 change-title-mobile">About Vaccurate</p>
+                <p class="subtitle lightblue is-3 mb-5 change-title-mobile">About DormBuddy</p>
               </div>
               <p class="is-size-5 is-size-6-mobile aboutme-mobile">
-                Vaccurate is a web app that automatically distributes available vaccines in the area to people in need according to a weighted score.
-                Users can login to Vaccurate and fill out a questionnaire about themselves and their medical history. Vaccurate will assign a score to 
-                that particular user, and the score can be used to assign the person to a clinic with the fastest wait time. Factors to determine someone's
-                score include Occupation, Age, and Medical History.
+                DormBuddy is an online platform that simulates a dorm experience for students who are unable to attend school because of the pandemic. 
+                Using user profiles, it matches people with similar interests and puts them in a virtual dorm, allowing them to virtually interact and communicate using 
+                video calls. This platform tries to connect students in a school during the era of online schooling with the goal of building lasting relationships.
               </p>
             </div>
           </div>
@@ -119,14 +117,15 @@
                 <p class="subtitle lightblue is-3 mb-5 change-title-mobile">My Involvement</p>
               </div>
               <p class="is-size-5 is-size-6-mobile aboutme-mobile">
-                I was responsible for coming up with the weights for the score calculation, performing the calculation in the backend on a Java based server, and 
-                deploying the server on Heroku. The server would pull information about a user from a Firebase database and perform the calculations, then update the database accordingly. 
+                I was responsible for using Node.js and WebSockets in order to create a video calling feature for this application. 
+                I used Node and WebSockets to create the server that would handle the RPG style interactive dorm feature, and created the client side scripts to connect video feeds.
+                When working to create the video calling features, I also worked with the concept of ICE servers to handle secure peer to peer connections between two users. 
               </p>
             </div>
             <div class="column">
               <div>
-                <figure class="image is-2by1">
-                  <img src="../assets/vaccurate/login.png" alt="Vaccurate Login"/>
+                <figure class="image is-5by3">
+                  <img src="../assets/dormbuddy/node.svg" alt=""/>
                 </figure>
               </div>
             </div>
@@ -141,8 +140,8 @@
           <div class="columns is-vcentered">
             <div class="column">
               <div>
-                <figure class="image is-square">
-                  <img src="../assets/vaccurate/star.png" alt="Honourable Mention"/>
+                <figure class="image is-3by2">
+                  <img src="../assets/dormbuddy/app.png" alt="Hardware Hack"/>
                 </figure>
               </div>
             </div>
@@ -151,10 +150,8 @@
                 <p class="subtitle lightblue is-3 mb-5 change-title-mobile">Achievements</p>
               </div>
               <p class="is-size-5 is-size-6-mobile aboutme-mobile">
-                Within the 24 hours, we were able to create a 
-                web form that grabs user input, a server deployed that runs calculations, 
-                and a notification system that uses Twilio to send test notifications about your status. 
-                We recieved an <span class="winner-color">Honourable Mention</span> for this project.
+                Within the 24 hours, the team was able to create a working client side application, and deploy the dorm server onto heroku. 
+                The application was capable of allowing users to login to a virtual dorm and communicate to each other using text chat and video.
               </p>
             </div>
           </div>
@@ -165,7 +162,7 @@
     <div class="container mb-5">
       <div class="columns is-multiline">
         <div class="column is-half">
-          <a href="https://github.com/BenjaminSao/Vaccurate" target="_blank">
+          <a href="https://github.com/BenjaminSao/DormBuddies" target="_blank">
             <div class="card has-background-black">
               <div class="card-content">
                 <div class="media is-flex is-justify-content-center">
@@ -183,7 +180,7 @@
           </a>
         </div>
         <div class="column">
-          <a href="https://devpost.com/software/vaccurate" target="_blank">
+          <a href="https://devpost.com/software/dormbuddy" target="_blank">
             <div class="card has-background-black">
               <div class="card-content">
                 <div class="media is-flex is-justify-content-center">

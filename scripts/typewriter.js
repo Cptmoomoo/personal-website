@@ -43,7 +43,7 @@ public class AboutMe
     public Music playGuitar() { ... }
     public Entertainment watchAnime() { ... }
 
-}`
+}`;
 
 const jsText = `class AboutMe {
     static name = "Vincent Li";
@@ -73,7 +73,7 @@ int main() {
     int age = 20;
 
     return 0;
-}`
+}`;
 
 const codeAniTemp = 
 `
@@ -91,7 +91,7 @@ const codeAniTemp =
     <button id="jsbutton" :class="'button is-active is-small ' + jsStyle" v-on:click="changeText(4)">Javascript</button>
     <button id="pybutton" :class="'button is-active is-small ' + pyStyle" v-on:click="changeText(5)">Python</button>
   </div>
-</div>`
+</div>`;
 
 Vue.component('typewriterblock', {
     data: () => {
