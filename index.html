@@ -73,8 +73,8 @@
                   <h1 class="is-size-1 mb-3 lightblue change-title-mobile">ABOUT ME</h1>
               </div>
               <h1 class="is-size-4 is-size-6-mobile aboutme-mobile">
-                Hi! I'm <span style="color: #668de8;">Vincent Li</span>, a 2nd year co-op student at the University of Toronto specializing in software engineering. 
-                I am also pursuing a Mathematics degree as well and hope to use that knowledge towards the things I do.
+                Hi! I'm <span style="color: #668de8;">Vincent Li</span>, a 3rd year co-op student at the University of Toronto specializing in Software Engineering and 
+                majoring in Mathematics.
                 I like doing hackathons with my friends, learning about new technology, watching anime, and of course playing video games!
               </h1>
             </div>
@@ -90,6 +90,12 @@
       </div>
     </section>
 
+    <section class="section is-medium has-background-black">
+      <div class="container px-5">
+        <h1 class="is-size-1 mb-3 lightblue change-title-mobile">WORK EXPERIENCE</h1>
+      </div>
+    </section>
+
     <section class="section is-medium has-background-white">
       <a id="skills-section" class="navigate-to-projects"></a>
       <div id="projects-cards" class="container px-5">
@@ -99,7 +105,7 @@
               <h1 class="is-size-1 lightblue has-text-centered change-title-mobile">PROJECTS</h1>
             </a>
             <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile"><hr></h1>
-            <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile">SKILLS</h1>
+            <!-- <h1 class="is-size-1 mb-3 lightblue has-text-centered change-title-mobile">SKILLS</h1>
 
             <div class="card mx-2 mb-4 has-background-black">  
                 <div class="content py-4 px-4">
@@ -108,10 +114,8 @@
                     <sskill-tag v-for="item in sskills" :skill="item"></sskill-tag>
                   </div>
                 </div>
-            </div>
-            <h1 id="moreinfo" class="has-text-centered">Click the images for more info!</h1>
-
-            <div id="sitecard"></div>
+            </div> -->
+            <!-- <h1 id="moreinfo" class="has-text-centered">Click the images for more info!</h1> -->
 
             <project-card title="This Website"
                           hackathon="Personal Project"
@@ -130,7 +134,7 @@
                           img-href="./cards/ecoblock.html"
                           img-src="./assets/ecoblock/ecoblock.gif"
                           img-alt="EcoBlock"
-                          winning-prize="Best Use of Google Cloud"
+                          winning-prize="Google Cloud"
                           :skills="['Node.js', 'TypeScript', 'Blockchain', 'Python', 'Firebase']"
                           desc="An eco-friendly, power-saving cryptocurrency that rewards mining with green energy"
                           devpost="https://devpost.com/software/ecoblock"

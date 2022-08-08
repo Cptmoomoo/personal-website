@@ -1,11 +1,12 @@
 var VueTyperPlugin = window.VueTyper.default
 Vue.use(VueTyperPlugin)
 
+const AGE = 21;
+
 const javaText = `public class AboutMe {
     public String name = "Vincent Li";
     public String school = "University of Toronto";
     public String[] languages = ["English", "Japanese"];
-    private int age = 20;
 
     // Hobbies
     public Prize doHackathon() { ... }
@@ -19,7 +20,6 @@ const pythonText = `class AboutMe:
     name = "Vincent Li"
     school = "University of Toronto"
     languages = ["English", "Japanese"]
-    age = 20
     
     # Hobbies
     def do_hackathon() -> Prize:
@@ -35,7 +35,6 @@ public class AboutMe
     readonly string name = "Vincent Li";
     public string school = "University of Toronto";
     public string[] languages = ["English", "Japanese"];
-    private int age = 20;
 
     // Hobbies
     public Prize doHackathon() { ... }
@@ -49,7 +48,6 @@ const jsText = `class AboutMe {
     static name = "Vincent Li";
     school = "University of Toronto";
     languages = ["English", "Japanese"];
-    age = 20;
 
     // Hobbies
     doHackathon = () => { ... }
@@ -70,7 +68,6 @@ int main() {
     char name[10] = "Vincent Li";
     char school[21] = "University of Toronto";
     char languages[2][10] = {"English", "Japanese"};
-    int age = 20;
 
     return 0;
 }`;
