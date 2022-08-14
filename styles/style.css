@@ -65,6 +65,10 @@ div.typewriter {
   color: #668de8;
 }
 
+.darkblue {
+  color: #10368f;
+}
+
 .has-background-black {
   color: white;
 }
@@ -240,3 +244,45 @@ div.typewriter {
   }
 }
 
+.custom-work-card-container
+{
+  color: black;
+
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.custom-work-card-container .custom-work-card-start
+{
+  background-color: white;
+  padding: 3rem 3rem;
+}
+
+.custom-work-card-end > figure
+{
+  height: 100%;
+  width: 20rem;
+}
+
+.custom-work-card-end2 > figure
+{
+  height: 100%;
+  width: 20rem;
+}
+
+.custom-work-card-end > figure > img
+{
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-work-card-end2 > figure > img
+{
+  object-fit: cover;
+}
+
+.taq-logo
+{
+  height: 75%;
+  padding-top: 4rem;
+}
