@@ -5,6 +5,7 @@ const AGE = 21;
 
 const javaText = `public class AboutMe {
     public String name = "Vincent Li";
+    public String workplace = "AMD";
     public String school = "University of Toronto";
     public String[] languages = ["English", "Japanese"];
 
@@ -18,6 +19,7 @@ const javaText = `public class AboutMe {
 
 const pythonText = `class AboutMe:
     name = "Vincent Li"
+    workplace = "AMD"
     school = "University of Toronto"
     languages = ["English", "Japanese"]
     
@@ -33,6 +35,7 @@ const csText =
 public class AboutMe
 {
     readonly string name = "Vincent Li";
+    public string workplace = "AMD";
     public string school = "University of Toronto";
     public string[] languages = ["English", "Japanese"];
 
@@ -46,6 +49,7 @@ public class AboutMe
 
 const jsText = `class AboutMe {
     static name = "Vincent Li";
+    workplace = "AMD";
     school = "University of Toronto";
     languages = ["English", "Japanese"];
 
@@ -66,6 +70,7 @@ int watchAnime();
 // About Me
 int main() {
     char name[10] = "Vincent Li";
+    char workplace[3] = "AMD";
     char school[21] = "University of Toronto";
     char languages[2][10] = {"English", "Japanese"};
 
